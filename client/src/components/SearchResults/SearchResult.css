@@ -1,0 +1,66 @@
+.FoodCardContainer {
+  min-height: calc(100vh - 210px);
+  background-image: url("./bg.png");
+  background-size: cover;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+.FoodCards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.FoodCard {
+  width: 340px;
+  height: 167px;
+  border: 0.1px #f7d3d3 solid;
+
+  background:
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(165, 239, 255, 0.2) 0%,
+      rgba(110, 191, 244, 0.0447917) 77.08%,
+      rgba(70, 144, 213, 0) 100%
+    );
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(13.1842px);
+
+  border-radius: 20px;
+
+  display: flex;
+  padding: 8px;
+}
+
+.FoodCard .food_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.FoodCard .food_info h3 {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.FoodCard .food_info p {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.FoodCard .food_info button {
+  font-size: 12px;
+  border-radius: 5px;
+    padding: 6px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: #f22f2f;
+}

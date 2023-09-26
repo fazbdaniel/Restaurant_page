@@ -1,0 +1,63 @@
+.Container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .TopContainer {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+  }
+  
+  .TopContainer .search input {
+    background-color: transparent;
+    border: 1px solid red;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .TopContainer .search input::placeholder {
+    color: white;
+  }
+  
+  @media (0 < width < 600px) {
+    .TopContainer {
+      flex-direction: column;
+      height: 120px;
+    }
+  }
+  
+  .FilterContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 40px;
+  }
+  
+  .Button {
+    border-radius: 5px;
+    padding: 6px 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Button.isSelected {
+    background: #f22f2f;
+    outline: 1px solid white;
+  }
+  
+  .Button:not(.isSelected) {
+    background: #ff4343;
+    outline: 1px solid #ff4343;
+  }         
+  
+  .Button:hover {
+    background-color: #f22f2f;
+  }
+  
